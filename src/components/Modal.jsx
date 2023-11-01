@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Modal.css";
+import "./modal.css";
 
 function Modal({ openmodal, confirmDel }) {
   const [isOpen, setIsOpen] = useState(openmodal);
