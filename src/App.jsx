@@ -42,7 +42,11 @@ function App() {
     <div className="App">
       <Header setConfirmDel={setConfirmDel} selectId={selectId} />
       <DragDropContext onDragEnd={onDragEnd}>
-        <Droppable droppableId="droppable-1">
+        <Droppable
+          droppableId="droppable-1"
+          direction="horizontal"
+          destination={Droppable}
+        >
           {(provided) => (
             <div
               className="image-gallery"
