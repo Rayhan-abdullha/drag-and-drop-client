@@ -33,41 +33,13 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-.App {
+.container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px 20px 20px;
-  background-color: #f5f6fa;
+  padding: 0 20px;
   border-radius: 10px;
 }
 
 input[type="checkbox"] {
   accent-color: rgb(82, 82, 255);
-}
-.image-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
-}
-
-.delete-button {
-  background-color: #f53b57;
-  color: #fff;
-  border: none;
-  padding: 7px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-/* Hover effect */
-.delete-button:hover {
-  background-color: #ea2027;
-  transform: scale(1.1);
-}
-
-@media only screen and (max-width: 600px) {
-  .image-gallery {
-    grid-template-columns: 1fr 1fr;
-  }
 }

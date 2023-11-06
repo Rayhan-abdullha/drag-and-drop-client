@@ -1,17 +1,29 @@
 import React from "react";
 import "./card.css";
-const Card = ({ image, index, provided, selectId, handleSelect }) => {
+const Card = ({
+  onDragStart,
+  onDrop,
+  image,
+  index,
+  selectId,
+  handleSelect,
+  checked,
+}) => {
   return (
     <div
+      onDragStart={() => onDragStart(image)}
+      onDrop={() => onDrop(index)}
+      draggable={true}
       key={index}
       className={`image-card ${index === 0 ? "big" : "small"}`}
-      {...provided.draggableProps}
-      {...provided.dragHandleProps}
-      ref={provided.innerRef}
     >
-      <input onClick={() => handleSelect(image.id)} type="checkbox" />
+      <input
+        onClick={() => handleSelect(image._id)}
+        type="checkbox"
+        checked={checked}
+      />
       <img src={image.img} alt={`Image ${index + 1}`} />
-      <div className={`${selectId.includes(image.id) ? "" : "overlay"}`}></div>
+      <div className={`${selectId.includes(image._id) ? "" : "overlay"}`}></div>
     </div>
   );
 };

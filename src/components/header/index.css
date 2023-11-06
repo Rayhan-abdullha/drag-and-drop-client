@@ -1,0 +1,79 @@
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  margin: 50px 0;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+}
+.selected input {
+  width: 20px;
+  height: 20px;
+}
+
+.intro-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  color: #fff;
+  z-index: 9;
+}
+.background-intro {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.overlay-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(25, 27, 38, 0.32),
+    rgba(25, 27, 38, 0.72)
+  );
+}
+.content-intro {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 440px;
+  padding: 0 32px;
+}
+
+.imageBanner {
+  position: absolute;
+  min-width: 1000%;
+  min-height: 1000%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(0.1);
+}
+
+.delete-button {
+  background-color: #f53b57;
+  color: #fff;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+  transition: transform 0.8s ease;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background-color: #ea2027;
+  transform: scale(1.1);
+}

@@ -1,58 +1,48 @@
-import image1 from "../../src//assets/gallery/image-1.webp";
-import image2 from "../../src/assets/gallery/image-2.webp";
-import image3 from "../../src/assets/gallery/image-3.webp";
-import image4 from "../../src/assets/gallery/image-4.webp";
-import image5 from "../../src/assets/gallery/image-5.webp";
-import image6 from "../../src/assets/gallery/image-6.webp";
-import image7 from "../../src/assets/gallery/image-7.webp";
-import image8 from "../../src/assets/gallery/image-8.webp";
-import image9 from "../../src/assets/gallery/image-9.webp";
-import image10 from "../../src/assets/gallery/image-10.jpeg";
-import image11 from "../../src/assets/gallery/image-11.jpeg";
+import loader from "../../src//assets/gallery/loading.gif";
 
 export const imgData = [
   {
     id: 1,
-    img: image1,
+    img: loader,
   },
   {
     id: 2,
-    img: image2,
+    img: loader,
   },
   {
     id: 3,
-    img: image3,
+    img: loader,
   },
   {
     id: 4,
-    img: image4,
+    img: loader,
   },
   {
     id: 5,
-    img: image5,
+    img: loader,
   },
   {
     id: 6,
-    img: image6,
+    img: loader,
   },
   {
     id: 7,
-    img: image7,
+    img: loader,
   },
   {
     id: 8,
-    img: image8,
+    img: loader,
   },
   {
     id: 9,
-    img: image9,
+    img: loader,
   },
   {
     id: 10,
-    img: image10,
+    img: loader,
   },
   {
     id: 11,
-    img: image11,
+    img: loader,
   },
 ];

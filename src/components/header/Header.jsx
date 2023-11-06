@@ -1,11 +1,11 @@
 import React from "react";
-import "./header.css";
+import "./index.css";
 const Header = ({ setConfirmDel, selectId }) => {
   const handleDeleteImg = () => {
     setConfirmDel(true);
   };
   return (
-    <div className="header">
+    <div className="gallery-header">
       <div className="selected">
         {selectId.length !== 0 ? (
           <>

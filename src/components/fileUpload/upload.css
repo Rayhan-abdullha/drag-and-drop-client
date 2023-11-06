@@ -1,0 +1,17 @@
+.file-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 225px;
+  margin-top: 3px;
+  border: 2px dotted black;
+}
+.file-upload input {
+  display: none;
+  visibility: hidden;
+}
+.file-upload label {
+  text-align: center;
+  cursor: pointer;
+}
