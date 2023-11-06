@@ -17,9 +17,7 @@ const Home = () => {
   const [selectId, setSetSelectId] = useState([]);
   const [confirmDel, setConfirmDel] = useState(false);
 
-  const [dragging, setDragging] = useState(false);
   const [draggedImage, setDraggedImage] = useState(null);
-  const [draggedIndex, setDraggedIndex] = useState(null);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -51,7 +49,6 @@ const Home = () => {
   };
   const handleDragStart = (img) => {
     setDraggedImage(img);
-    setDragging(true);
   };
 
   const handleDragOver = (e) => {
@@ -60,8 +57,6 @@ const Home = () => {
   };
 
   const handleDrop = (targetIndex) => {
-    setDragging(false);
-
     if (draggedImage) {
       const updatedImages = state.userGallery.filter(
         (image) => image._id !== draggedImage._id

@@ -51,8 +51,6 @@ const Gallery = () => {
     }
   };
 
-  const data = state.allGalleries || ImageData;
-
   return (
     <div className="image-gallery" onDragOver={handleDragOver}>
       {state.allGalleries?.map((image, index) => (
