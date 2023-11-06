@@ -21,6 +21,7 @@ const Card = ({
         onClick={() => handleSelect(image._id)}
         type="checkbox"
         checked={checked}
+        readOnly
       />
       <img src={image.img} alt={`Image ${index + 1}`} />
       <div className={`${selectId.includes(image._id) ? "" : "overlay"}`}></div>

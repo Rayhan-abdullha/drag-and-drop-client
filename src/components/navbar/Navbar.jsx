@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import avatar from "../../assets/profile.png";
 import { useAppContext } from "../../context/AppContext";
 import { toast } from "react-toastify";
